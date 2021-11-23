@@ -54,8 +54,8 @@ function montaTr(paciente){
 
 function validaPaciente(paciente){
   var erros = [];
-  if (!validaPeso(paciente.peso)) erros.push('Peso inválido!');
-  if (!validaAltura(paciente.altura)) erros.push('Altura inválida!');
+  if (!validaPeso(paciente.peso)) erros.push('Peso inválido! Favor insira uma peso entre 1 e 500');
+  if (!validaAltura(paciente.altura)) erros.push('Altura inválida! Favor insira uma altura entre 0.40 a 2.70');
   if (paciente.nome.length == 0) erros.push('O campo nome não pode ficar em branco');
   if (paciente.gordura.length ==0) erros.push('O campo gordura não pode ficar em branco');
   if (paciente.peso.length ==0) erros.push('O campo peso não pode ficar em branco');
